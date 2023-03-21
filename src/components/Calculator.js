@@ -1,72 +1,65 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './calculator.css';
 
 function Calculator() {
-  const [result, setResult] = useState(0);
-  const handleClick = (e) => {
-    setResult((prevState) => calculate(prevState, e.target.innerText));
-  };
-
   return (
     <div className="calc-container">
-      <div data-testid="display" className="display">
-        {result.next || result.total || 0}
-      </div>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <div className="display">0</div>
+      <button type="submit" className="calc-key">
         AC
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         +/-
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         %
       </button>
-      <button type="submit" className="operator" onClick={handleClick}>
+      <button type="submit" className="operator">
         ÷
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         7
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         8
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         9
       </button>
-      <button type="submit" className="operator" onClick={handleClick}>
+      <button type="submit" className="operator">
         x
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         4
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         5
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         6
       </button>
-      <button type="submit" className="operator" onClick={handleClick}>
+      <button type="submit" className="operator">
         -
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         1
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         2
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         3
       </button>
-      <button type="submit" className="operator" onClick={handleClick}>
+      <button type="submit" className="operator">
         +
       </button>
-      <button type="submit" className="zero" onClick={handleClick}>
+      <button type="submit" className="zero">
         0
       </button>
-      <button type="submit" className="calc-key" onClick={handleClick}>
+      <button type="submit" className="calc-key">
         .
       </button>
-      <button type="submit" className="operator" onClick={handleClick}>
+      <button type="submit" className="operator">
         =
       </button>
     </div>

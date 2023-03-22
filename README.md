@@ -151,7 +151,7 @@ Example command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kkolade/math-magician/issues).
+Feel free to check the [issues page](https://github.com/kkolade/the-math-magician/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +160,7 @@ Feel free to check the [issues page](https://github.com/kkolade/math-magician/is
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project please [buy me coffee](
-buymeacoffee.com/kolakolade) 🥤
+<https://www.buymeacoffee.com/kolakolade>) 🥤
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

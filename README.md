@@ -160,7 +160,7 @@ Feel free to check the [issues page](https://github.com/kkolade/the-math-magicia
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project please [buy me coffee](
-buymeacoffee.com/kolakolade) 🥤
+<https://www.buymeacoffee.com/kolakolade>) 🥤
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

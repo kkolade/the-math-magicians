@@ -2,38 +2,32 @@ import React, { useEffect, useState } from 'react';
 import './quote.css';
 
 const Quote = () => {
-  const [quote, setQuote] = useState([
-    {
-      quote: '',
-      author: '',
-    },
-  ]);
-  const [hasError, setHasError] = useState(false);
+  const [quote, setQuote] = useState('');
+  const [author, setAuthor] = useState('');
+  const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  const url = 'https://api.api-ninjas.com/vi/quotes';
+  const url = 'https://api.api-ninjas.com/v1/quotes';
 
   useEffect(() => {
-    const getQuote = async () => {
-      setIsLoading(true);
-      try {
-        const fetchQuote = await fetch(url, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-            'X-Api-Key': '5JRFQ6w6eGkiarUaRw4wogMbESJE4M17qc6Sfvzi',
-          },
-        });
-        const fetchedQuote = fetchQuote.json();
-        setQuote(fetchedQuote);
-      } catch (error) {
-        setHasError(true);
-      }
-      setIsLoading(false);
-    };
-    getQuote();
-  }, [setQuote, setIsLoading]);
-
-  if (hasError) {
+    setIsLoading(true);
+    fetch(url, {
+      headers: {
+        'X-Api-Key': '5JRFQ6w6eGkiarUaRw4wogMbESJE4M17qc6Sfvzi',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setQuote(data[0].quote);
+        setAuthor(data[0].author);
+        setError(null);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setIsLoading(false);
+        setError(error.message);
+      });
+  }, []);
+  if (error) {
     return (
       <div className="Quote-container Quote-filler">
         <span className="error">Error getting quote!!!</span>
@@ -51,10 +45,10 @@ const Quote = () => {
     <div className="Quote-container">
       <p>
         &quot;
-        {quote[0].quote}
+        {quote}
         &quot;
       </p>
-      <p>{quote[0].author}</p>
+      <p className="Quote-author">{author}</p>
     </div>
   );
 };

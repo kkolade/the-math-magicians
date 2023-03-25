@@ -24,8 +24,6 @@ const Quote = () => {
           },
         });
         const fetchedQuote = fetchQuote.json();
-        console.log(fetchQuote);
-        console.log(fetchedQuote);
         setQuote(fetchedQuote);
       } catch (error) {
         setHasError(true);

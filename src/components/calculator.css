@@ -3,6 +3,8 @@
 }
 
 .calc-container {
+  border: 1px solid #858585;
+  background-color: #fff;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);

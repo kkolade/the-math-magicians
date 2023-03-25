@@ -18,12 +18,14 @@ const Quote = () => {
       try {
         const fetchQuote = await fetch(url, {
           method: 'GET',
-          header: {
+          headers: {
             'Content-Type': 'application/json',
-            'X-Api-Key': 'tgGQLF0ayPX9ZzYdnazDEA==ZUlyDiE4HJM8YHuy',
+            'X-Api-Key': '5JRFQ6w6eGkiarUaRw4wogMbESJE4M17qc6Sfvzi',
           },
         });
         const fetchedQuote = fetchQuote.json();
+        console.log(fetchQuote);
+        console.log(fetchedQuote);
         setQuote(fetchedQuote);
       } catch (error) {
         setHasError(true);
@@ -36,14 +38,14 @@ const Quote = () => {
   if (hasError) {
     return (
       <div className="Quote-container Quote-filler">
-        <span className="error">Error getting the quotes!!!</span>
+        <span className="error">Error getting quote!!!</span>
       </div>
     );
   }
   if (isLoading) {
     return (
       <div className="Quote-container Quote-filler">
-        <span>Loading the quotes...</span>
+        <span>Loading a quote...</span>
       </div>
     );
   }

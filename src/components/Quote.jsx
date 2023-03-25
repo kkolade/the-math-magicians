@@ -4,8 +4,8 @@ import './quote.css';
 const Quote = () => {
   const [quote, setQuote] = useState([
     {
-      quote: 'The will of man is his happiness.',
-      author: 'Friedrich Schiller',
+      quote: '',
+      author: '',
     },
   ]);
   const [hasError, setHasError] = useState(false);

@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import './quote.css';
 
 const Quote = () => {
-  const [quote, setQuote] = useState([]);
+  const [quote, setQuote] = useState([
+    {
+      quote: 'The will of man is his happiness.',
+      author: 'Friedrich Schiller',
+    },
+  ]);
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const url = 'https://api.api-ninjas.com/vi/quotes';
@@ -18,11 +24,9 @@ const Quote = () => {
           },
         });
         const fetchedQuote = fetchQuote.json();
-        console.log(fetchedQuote);
         setQuote(fetchedQuote);
       } catch (error) {
         setHasError(true);
-        console.log(error);
       }
       setIsLoading(false);
     };
@@ -31,20 +35,20 @@ const Quote = () => {
 
   if (hasError) {
     return (
-      <div className="Quotes-container">
+      <div className="Quote-container Quote-filler">
         <span className="error">Error getting the quotes!!!</span>
       </div>
     );
   }
   if (isLoading) {
     return (
-      <div className="Quotes-container">
+      <div className="Quote-container Quote-filler">
         <span>Loading the quotes...</span>
       </div>
     );
   }
   return (
-    <div className="Quotes-container">
+    <div className="Quote-container">
       <p>
         &quot;
         {quote[0].quote}

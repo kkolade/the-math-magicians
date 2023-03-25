@@ -1,11 +1,11 @@
 import Calculator from './components/Calculator';
-import Quotes from './components/Quotes';
+import Quote from './components/Quote';
 
 function App() {
   return (
     <div className="App">
       <Calculator />
-      <Quotes />
+      <Quote />
     </div>
   );
 }

@@ -26,7 +26,7 @@
 
 # 📖 Math Magician React App <a name="about-project"></a>
 
-**The Math Magician React App** is a...
+**The Math Magician React App** is a SPA project I'll be creating using React.
 
 ## 🛠 Built With <a name="built-with"></a>
 

@@ -1,0 +1,14 @@
+.Quote-container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.Quote-filler {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.Quote-author {
+  text-align: right;
+}

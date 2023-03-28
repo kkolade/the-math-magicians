@@ -2,6 +2,13 @@
   border: none;
 }
 
+.Calculator-page-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  padding: 0 6rem;
+}
+
 .calc-container {
   border: 1px solid #858585;
   background-color: #fff;
@@ -11,7 +18,6 @@
   grid-column-gap: 0;
   grid-row-gap: 0;
   width: 50%;
-  margin: 0 auto;
   height: 500px;
 }
 

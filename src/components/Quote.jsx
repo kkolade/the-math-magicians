@@ -38,6 +38,7 @@ const Quote = () => {
     return (
       <div className="Quote-container Quote-filler">
         <span>Loading a quote...</span>
+        <div className="Quote-loader" />
       </div>
     );
   }

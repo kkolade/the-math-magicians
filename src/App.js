@@ -6,13 +6,13 @@ import Quote from './components/Quote';
 
 function App() {
   return (
-    <>
-      <nav>
+    <div className="App-container">
+      <nav className="App-navbar">
         <h1>
           <Link to="/">Math Magicians</Link>
         </h1>
-        <ul>
-          <li>
+        <ul className="App-nav">
+          <li className="App-nav-item">
             <Link to="/">Home</Link>
           </li>
           <li>
@@ -28,7 +28,7 @@ function App() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/quote" element={<Quote />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,9 @@
+.Home-container {
+  margin-top: 3rem;
+  padding: 4rem;
+}
+
+.Home-headline,
+.Home-text-content {
+  margin: 1.5rem 0;
+}

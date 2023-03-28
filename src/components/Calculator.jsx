@@ -11,7 +11,7 @@ function Calculator() {
 
   return (
     <div className="Calculator-page-container">
-      <h2 className="Calculator-page-text">Let`&apos;`s do some math!</h2>
+      <h2 className="Calculator-page-text">Let&apos;s do some math!</h2>
       <div className="calc-container">
         <div className="display">{result.next || result.total || 0}</div>
         <Button type="submit" className="calc-key" onClick={handleClick}>

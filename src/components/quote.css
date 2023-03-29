@@ -6,7 +6,6 @@
 }
 
 .Quote-filler {
-  text-align: center;
   font-size: 2rem;
 }
 
@@ -27,4 +26,22 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.Quote-error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Quote-error-text {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.Quote-error-img {
+  display: inline-block;
+  width: 20rem;
+  margin: 4rem;
 }

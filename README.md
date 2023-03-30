@@ -134,6 +134,13 @@ Example command:
 - Twitter: [kola_kolade](https://twitter.com/kola_kolade)
 - LinkedIn: [kolakolade](https://linkedin.com/in/kolakolade)
 
+
+👤 **Christopher Abraham**
+
+- GitHub: [kkolade](https://github.com/Cabraham1)
+- Twitter: [kola_kolade](https://twitter.com/_cabraham)
+- LinkedIn: [kolakolade](https://linkedin.com/in/abrahamchristopher)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

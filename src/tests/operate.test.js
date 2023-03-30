@@ -22,7 +22,7 @@ describe('operate', () => {
   test('calculates modulo of two numbers', () => {
     expect(operate(7, 4, '%')).toEqual(Big(3).toString());
     expect(operate(7, 0, '%')).toEqual(
-      "Can't find modulo as can't divide by 0."
+      "Can't find modulo as can't divide by 0.",
     );
   });
 

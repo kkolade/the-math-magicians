@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [A live demo link will be added as soon as the app is completed and hosted](https://yourdeployedapplicationlink.com)
+- [A live demo link will be added as soon as the app is completed and hosted](https://the-math-magicians.onrender.com/quote)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +133,6 @@ Example command:
 - GitHub: [kkolade](https://github.com/kkolade)
 - Twitter: [kola_kolade](https://twitter.com/kola_kolade)
 - LinkedIn: [kolakolade](https://linkedin.com/in/kolakolade)
-
 
 👤 **Christopher Abraham**
 

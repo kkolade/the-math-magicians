@@ -147,7 +147,7 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add scientific Calculator Feature**
+- [ ] **Add scientific Calculator Feature,**
 - [ ] **Make it a stand alone calculator**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -29,8 +29,13 @@ const Quote = () => {
   }, []);
   if (error) {
     return (
-      <div className="Quote-container Quote-filler">
-        <span className="error">Error getting quote!!!</span>
+      <div className="Quote-container Quote-filler Quote-error">
+        <span className="Quote-error-text">Error getting quote!!!</span>
+        <img
+          src="https://media.giphy.com/media/r3xBH1FXWz0h55CVtj/giphy.gif"
+          alt="unable to get quote"
+          className="Quote-error-img"
+        />
       </div>
     );
   }

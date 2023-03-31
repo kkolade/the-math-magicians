@@ -1,16 +1,26 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
-import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import { fireEvent, render } from '@testing-library/react';
+import React from 'react';
 import Button from '../components/Button';
 
-describe('testing Button', () => {
-  test('Button snapshot renders correctly', () => {
-    const tree = renderer.create(<Button />).toJSON();
-    expect(tree).toMatchSnapshot();
+describe('Button', () => {
+  test('renders button correctly', () => {
+    const { container } = render(
+      <Button className="test-class" onClick={() => {}}>
+        Test Button
+      </Button>,
+    );
+    expect(container.firstChild).toMatchSnapshot();
   });
-  test('Button component renders correctly', () => {
-    render(<Button />);
-    expect(screen.getByRole('button')).toBeInTheDocument();
+
+  test('calls onClick when button is clicked', () => {
+    const onClickMock = jest.fn();
+    const { getByText } = render(
+      <Button className="test-class" onClick={onClickMock}>
+        Test Button
+      </Button>,
+    );
+    fireEvent.click(getByText('Test Button'));
+    expect(onClickMock).toHaveBeenCalledTimes(1);
   });
 });
